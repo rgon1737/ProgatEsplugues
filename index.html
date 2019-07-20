@@ -1,0 +1,494 @@
+
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+<title></title>
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="googlebot" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1”>
+
+<script type="text/javascript" src=“.js/jquery-3.3.1.slim.min.js"></script>
+<script type="text/javascript" src=“.css/bootstrap.min.css”/></script>
+<script type="text/javascript" src=“.js/bootstrap.min.js"></script>
+<script type="text/javascript" src=“.css/font-awesome.min.css”/></script>
+<script type="text/javascript" src=“.js/masonry.pkgd.min.js"></script>
+
+<style id="compiled-css" type="text/css">
+
+body{
+
+background:#f5f5dc;
+
+font-family: "Open Sans", sans-serif;
+
+font-weight: 300;
+
+text-transform: none;
+
+font-size: 16px;}
+
+}
+
+
+
+/* ----------------------------------------------------
+
+3 - Layout
+
+---------------------------------------------------- */
+
+.box, .menu li a, #header h1 a, .navigation a{
+
+-webkit-transition: all 200ms linear; /*safari and chrome */
+
+-moz-transition: all 200ms linear; /* firefox */
+
+-o-transition: all 200ms linear; /* opera */
+
+transition: all 200ms linear;
+
+}
+
+
+
+.box{
+
+background:#FFF;
+
+margin-bottom:20px;
+
+padding: 5px 10px 5px 10px;
+
+margin-left: 15px;
+
+float:left;
+
+-webkit-box-shadow:1px 1px 3px rgba(0,0,0,0.2);
+
+-moz-box-shadow:1px 1px 3px rgba(0,0,0,0.2);
+
+box-shadow:1px 1px 3px rgba(0,0,0,0.2);
+
+overflow:hidden;
+
+position:relative;
+
+max-width: 330px;
+
+}
+
+
+
+.box .nombre {
+
+font-weight: bold;
+
+color:#B94A50;
+
+}
+
+
+
+.alignleft{
+
+float:left;
+
+clear:left;
+
+}
+
+
+
+img.alignleft, .alignleft img{
+
+margin:0 25px 5px 0;
+
+}
+
+
+
+#header{
+
+margin-bottom:30px;
+
+background:#DDEAEB;
+
+padding:20px 0px 20px 0px;
+
+border-bottom:1px solid rgba(0,0,0,0.15);
+
+}
+
+
+
+#site-info {
+
+display:inline;
+
+float:left;
+
+width:100%;
+
+}
+
+
+
+.logo {
+
+margin-left: 10px;
+
+width: 70px;
+
+height: 70px;
+
+border-radius: 50%;
+
+}
+
+
+
+.navbar {
+
+background-color:#B94A50 !important;
+
+}
+
+
+
+.nav-link {
+
+color: white !important;
+
+}
+
+
+
+.navbar .navbar-toggler {
+
+border: solid 1px white;
+
+display: flex;
+
+align-items: center;
+
+}
+
+
+
+/*.menu-text {
+
+margin-left: 10px;
+
+color: white;
+
+}*/
+
+
+
+#footer{
+
+margin-top:40px;
+
+background:#FFF;
+
+padding:20px 20px 20px 40px;
+
+border-top:1px solid rgba(0,0,0,0.15);
+
+border-bottom:1px solid rgba(0,0,0,0.15);
+
+color:#999;
+
+clear:both;
+
+}
+
+
+
+.responsive-logo {
+
+max-width: 75%;
+
+height: auto;
+
+}
+
+
+
+.responsive {
+
+max-width: 100%;
+
+height: auto;
+
+}
+
+
+
+</style>
+
+
+
+
+
+<!-- TODO: Missing CoffeeScript 2 -->
+
+
+
+<script type="text/javascript">//<![CDATA[
+
+
+
+window.onload=function(){
+
+
+
+$( function() {
+
+
+
+$('#container').masonry({
+
+// options...
+
+isAnimated: true,
+
+animationOptions: {
+
+duration: 750,
+
+easing: 'linear',
+
+queue: false
+
+}
+
+});
+
+
+
+});
+
+
+
+
+
+}
+
+
+
+//]]></script>
+
+
+
+</head>
+
+<body>
+
+<div id="header">
+
+<div id="site-info">
+
+<h1 id="logo"><img class="logo" src="https://i.ibb.co/3BxxPm9/IMG-20190719-WA0020.jpg" /><a href="" title="Progat Esplugues" rel="home"><img src="https://i.ibb.co/HddXN3v/progat-esplugues.png" class="responsive-logo"></a> </h1>
+
+<h3></h3>
+
+</div>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+<span class="navbar-toggler-icon"></span>
+
+<!--span class="menu-text">Menú</span-->
+
+</button>
+
+
+
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+<ul class="navbar-nav mr-auto">
+
+<li class="nav-item active">
+
+<a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+
+</li>
+
+<li class="nav-item">
+
+<a class="nav-link" href="#">Quiénes somos</a>
+
+</li>
+
+<li class="nav-item dropdown">
+
+<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+Nuestros gatos
+
+</a>
+
+<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+<a class="dropdown-item" href="#">En adopción</a>
+
+<div class="dropdown-divider"></div>
+
+<a class="dropdown-item" href="#">Casos especiales</a>
+
+</div>
+
+</li>
+
+</ul>
+
+<!--form class="form-inline my-2 my-lg-0">
+
+<input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
+
+<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+
+</form-->
+
+</div>
+
+</nav>
+
+</div>
+
+
+
+<div id="container">
+
+<div class="box">
+
+<span class="nombre">Nombre</span>
+
+<br/>
+
+<img class="alignleft responsive" src="https://i.ibb.co/ngMLDcw/IMG-20190719-WA0001.jpg" />
+
+<br/>
+
+Descripción
+
+</div>
+
+<div class="box">
+
+<span class="nombre">Nombre</span>
+
+<br/>
+
+<img class="alignleft responsive" src="https://i.ibb.co/dp7dk7Y/IMG-20190719-WA0006.jpg" />
+
+<br/>
+
+Descripción
+
+</div>
+
+<div class="box">
+
+<span class="nombre">Nombre</span>
+
+<br/>
+
+<img class="alignleft responsive" src="https://i.ibb.co/sVyCF4x/IMG-20190719-WA0007.jpgg" />
+
+<br/>
+
+Descripción
+
+</div>
+
+<div class="box">
+
+<span class="nombre">Nombre</span>
+
+<br/>
+
+<img class="alignleft responsive" src="https://i.ibb.co/swWWsH9/IMG-20190719-WA0013.jpg" />
+
+<br/>
+
+Descripción
+
+</div>
+
+<div class="box">
+
+<span class="nombre">Nombre</span>
+
+<br/>
+
+<img class="alignleft responsive" src="https://i.ibb.co/0qGQ4pf/IMG-20190719-WA0017.jpg" />
+
+<br/>
+
+Descripción
+
+</div>
+
+<div class="box">
+
+<span class="nombre">Nombre</span>
+
+<br/>
+
+<img class="alignleft responsive" src="https://i.ibb.co/DMrr33R/IMG-20190719-WA0019.jpg" />
+
+<br/>
+
+Descripción
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+<script>
+
+// tell the embed parent frame the height of the content
+
+if (window.parent && window.parent.parent){
+
+window.parent.parent.postMessage(["resultsFrame", {
+
+height: document.body.getBoundingClientRect().height,
+
+slug: "omc940wL"
+
+}], "*")
+
+}
+
+
+
+// always overwrite window.name, in case users try to set it manually
+
+window.name = "result"
+
+</script>
+
+</body>
+
+</html>
+
+
