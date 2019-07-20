@@ -73,6 +73,10 @@ img.alignleft, .alignleft img{
   	color: white !important;
 }
 
+.navbar .navbar-toggler {
+  border: solid 1px white;
+}
+
 #footer{
 	margin-top:40px;
 	background:#FFF;
