@@ -21,15 +21,14 @@ body{
 .box{
 	background:#FFF;
 	margin-bottom:20px;
-	padding:5px;
-  margin-left: 15px;
+	padding: 5px 10px 5px 10px;  margin-left: 15px;
 	float:left;
 	-webkit-box-shadow:1px 1px 3px rgba(0,0,0,0.2);
 	-moz-box-shadow:1px 1px 3px rgba(0,0,0,0.2);
 	box-shadow:1px 1px 3px rgba(0,0,0,0.2);
 	overflow:hidden;
 	position:relative;
-  max-width: 330px;
+	max-width: 330px;
 }
 
 .box .nombre {
@@ -54,24 +53,24 @@ img.alignleft, .alignleft img{
 }
 	
 #site-info {
-  display:inline;
-  float:left;
-  width:100%;
+	  display:inline;
+	  float:left;
+	  width:100%;
 }
 	
 .logo {
-  margin-left: 10px;
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
+	  margin-left: 10px;
+	  width: 70px;
+	  height: 70px;
+	  border-radius: 50%;
 }
 
 .navbar {
-  background-color:#B94A50 !important;
+  	background-color:#B94A50 !important;
 }
 
 .nav-link {
-  color: white !important;
+  	color: white !important;
 }
 
 #footer{
@@ -85,11 +84,11 @@ img.alignleft, .alignleft img{
 }
 
 .responsive_logo {
-  max-width: 75%;
-  height: auto;
+	max-width: 75%;
+	height: auto;
 }
 
 .responsive {
-  max-width: 100%;
-  height: auto;
+	max-width: 100%;
+	height: auto;
 }
