@@ -29,7 +29,7 @@ body{
 	overflow:hidden;
 	position:relative;
 	max-width: 330px;
-	text-align: center;
+	/*text-align: center;*/
 }
 
 .box .nombre {
