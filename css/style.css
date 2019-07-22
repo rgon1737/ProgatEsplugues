@@ -29,11 +29,16 @@ body{
 	overflow:hidden;
 	position:relative;
 	max-width: 330px;
+	text-align: center;
 }
 
 .box .nombre {
   font-weight: bold;
   color:#B94A50;
+}
+
+.box .descripcion {
+	text-align: left !important;
 }
 
 .alignleft{
