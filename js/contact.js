@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-$("#sendMessage").on("click", function() {
+$("#contact-submit").on("click", function() {
     message = $("#contactform").serialize();
     $.ajax({
         url: "//formspree.io/dynamicrealities@gmail.com", 
