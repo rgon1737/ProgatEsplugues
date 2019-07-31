@@ -81,7 +81,7 @@
         if (thankYouMessage) {
           thankYouMessage.style.display = "block";
         }*/
-        location.href='./index.html';
+        location.href='./success.html';
         return;
     };
     // url encode form data for sending as post data
