@@ -66,7 +66,7 @@
 </div>
 
 <div class="container">  
-  <form id="contact" class="gform" action="https://script.google.com/macros/s/AKfycbzXhnk1CHpypQs_aZRwttfesAcwDeq--z93wCfpAA/exec" method="post">
+  <form id="contact" class="gform" action="https://script.google.com/macros/s/AKfycbzXhnk1CHpypQs_aZRwttfesAcwDeq--z93wCfpAA/exec">
     	<h3>Cont&aacute;ctanos!</h3>
     <!--h4>Contact us today, and get reply with in 24 hours!</h4-->
 	<input name="_formsubmit_id" type="text" style="display:none">    
@@ -83,10 +83,24 @@
       		<textarea placeholder="Escribe tu mensaje...." name="mensaje" tabindex="5" required></textarea>
     	</fieldset>
     	<fieldset>
-      	<button type="submit" id="contact-submit">Enviar</button>
+      	<button id="contact-submit">Enviar</button>
     </fieldset>
   </form>  
 </div>
+
+<script type="text/javascript">
+	$("#contact-submit").on("click", function() {
+    		message = $("#contact").serialize();
+    		$.ajax({
+        		url: "https://script.google.com/macros/s/AKfycbzXhnk1CHpypQs_aZRwttfesAcwDeq--z93wCfpAA/exec", 
+        		method: "POST",
+        		data: {message: message},
+        		dataType: "json"
+    		});
+    		alert('Thanks for the email, we\'ll be in touch promptly.');
+    		return false;
+	});
+</script>
 	
 </div>
 
