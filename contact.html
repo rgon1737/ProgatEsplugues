@@ -66,37 +66,27 @@
 </div>
 
 <div class="container">  
-  <form id="contact" method="POST">
-    <h3>Cont&aacute;ctanos!</h3>
+  <form id="contactform" action="https://formsubmit.io/send/rubensgnz@gmail.com" method="POST">    
+    	<h3>Cont&aacute;ctanos!</h3>
     <!--h4>Contact us today, and get reply with in 24 hours!</h4-->
-    <input type="hidden" name="_next" value="https://rgon1737.github.io/ProgatEsplugues/contact.html" />
-    <input type="hidden" name="_language" value="es" style="display:none" />
-    <input type="text" name="_gotcha" style="display:none" />    
-    <fieldset>
-      <input placeholder="Nombre" name="nombre" type="text" tabindex="1" required autofocus>
-    </fieldset>
-    <fieldset>
-      <input placeholder="Email" name="email" type="email" tabindex="2" required>
-    </fieldset>
-    <fieldset>
-      <input placeholder="Tel&eacute;fono" name="telefono" type="tel" tabindex="3" required>
-    </fieldset>
-    <fieldset>
-      <textarea placeholder="Escribe tu mensaje...." name="mensaje" tabindex="5" required></textarea>
-    </fieldset>
-    <fieldset>
-      <button type="submit" id="contact-submit">Enviar</button>
+	<input name="_formsubmit_id" type="text" style="display:none">    
+    	<fieldset>
+      		<input placeholder="Nombre" name="nombre" type="text" tabindex="1" required autofocus>
+    	</fieldset>
+    	<fieldset>
+      		<input placeholder="Email" name="email" type="email" tabindex="2" required>
+    	</fieldset>
+    	<fieldset>
+      		<input placeholder="Tel&eacute;fono" name="telefono" type="tel" tabindex="3" required>
+    	</fieldset>
+    	<fieldset>
+      		<textarea placeholder="Escribe tu mensaje...." name="mensaje" tabindex="5" required></textarea>
+    	</fieldset>
+    	<fieldset>
+      	<button type="submit" id="contact-submit">Enviar</button>
     </fieldset>
   </form>  
 </div>
-
-<div id="gracias" style="display:none">
-	<p>
-		Gracias por contactar con nosotros! En breve nos pondremos en contacto contigo.
-	</p>
-</div>
-
-<script type="text/javascript" src="./js/contact.js"></script>
 	
 </div>
 
