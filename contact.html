@@ -23,7 +23,7 @@
 
 <script type="text/javascript">
 	$("#submit").on("click", function() {
-		message = $("#contactform").serialize();
+		message = $("#contact").serialize();
 		$.ajax({
 			url: "//formspree.io/rubensgnz@gmail.com", 
 			method: "POST",
@@ -77,7 +77,7 @@
 </div>
 
 <div class="container">  
-  <form id="contactform" method="post">
+  <form id="contact" method="post">
     <h3>Contacta con nosotros</h3>
     <!--h4>Contact us today, and get reply with in 24 hours!</h4-->
     <input type="hidden" name="_next" value="https://rgon1737.github.io/ProgatEsplugues/contact.html" />
