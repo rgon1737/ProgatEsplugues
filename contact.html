@@ -20,22 +20,7 @@
 <link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="./css/style.css">
 <link rel="stylesheet" type="text/css" href="./css/contact.css">
-
-<script type="text/javascript">//<![CDATA[
-	window.onload=function(){
-		$("#contact-submit").on("click", function() {
-			message = $("#contact").serialize();
-			$.ajax({
-				url: "http://formspree.io/rubensgnz@gmail.com", 
-				method: "POST",
-				data: {message: message},
-				dataType: "json"
-			});
-			alert('Se ha enviado tu mensaje. En breve contactaremos contigo.');
-			return false;
-		});
-	}
-//]]></script>
+<script type="text/javascript" src="./js/contact.js"></script>
 	
 </head>
 
@@ -106,6 +91,12 @@
   </form>  
 </div>
 
+<div id="gracias" style="display:none">
+	<p>
+		Gracias por contactar con nosotros! En breve nos pondremos en contacto contigo.
+	</p>
+</div>
+	
 </div>
 
 </body>
