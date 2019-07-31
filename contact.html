@@ -21,19 +21,21 @@
 <link rel="stylesheet" type="text/css" href="./css/style.css">
 <link rel="stylesheet" type="text/css" href="./css/contact.css">
 
-<script type="text/javascript">
-	$("#submit").on("click", function() {
-		message = $("#contact").serialize();
-		/*$.ajax({
-			url: "http://formspree.io/rubensgnz@gmail.com", 
-			method: "POST",
-			data: {message: message},
-			dataType: "json"
-		});*/
-		alert('Se ha enviado tu mensaje. En breve contactaremos contigo.');
-		return false;
-	});
-</script>
+<script type="text/javascript">//<![CDATA[
+	window.onload=function(){
+		$("#submit").on("click", function() {
+			message = $("#contact").serialize();
+			$.ajax({
+				url: "http://formspree.io/rubensgnz@gmail.com", 
+				method: "POST",
+				data: {message: message},
+				dataType: "json"
+			});
+			alert('Se ha enviado tu mensaje. En breve contactaremos contigo.');
+			return false;
+		});
+	}
+//]]></script>
 	
 </head>
 
