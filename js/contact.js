@@ -71,8 +71,7 @@ $(document).on({
     }
 
     disableAllButtons(form);
-    var formElements = form.querySelector(".form-elements")
-    formElements.style.display = "none";
+    $("#contact").hide();
     var url = form.action;
     var xhr = new XMLHttpRequest();
     xhr.open('POST', url);
