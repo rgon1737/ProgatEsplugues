@@ -66,7 +66,7 @@
 
     disableAllButtons(form);
     $("#contact").hide();
-    $("#modal_loader").show();
+    $(".modal_loader").show();
     var url = form.action;
     var xhr = new XMLHttpRequest();
     xhr.open('POST', url);
