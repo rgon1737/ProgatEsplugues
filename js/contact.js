@@ -1,3 +1,10 @@
+$body = $("body");
+
+$(document).on({
+    ajaxStart: function() { $body.addClass("loading"); },
+    ajaxStop: function() { $body.removeClass("loading"); }    
+});
+
 (function() {
 
   // get all data in form and return object
@@ -64,6 +71,7 @@
     }
 
     disableAllButtons(form);
+    formElements.style.display = "none";
     var url = form.action;
     var xhr = new XMLHttpRequest();
     xhr.open('POST', url);
