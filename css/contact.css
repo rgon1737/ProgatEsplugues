@@ -97,7 +97,7 @@ fieldset {
    for themselves. Background we set to 80% white with
    our animation centered, and no-repeating */
 .modal_loader {
-    /*display:    none;*/
+    display:    none;
     position:   fixed;
     z-index:    1000;
     top:        0;
