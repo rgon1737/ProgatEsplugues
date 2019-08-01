@@ -71,6 +71,7 @@ $(document).on({
     }
 
     disableAllButtons(form);
+    var formElements = form.querySelector(".form-elements")
     formElements.style.display = "none";
     var url = form.action;
     var xhr = new XMLHttpRequest();
