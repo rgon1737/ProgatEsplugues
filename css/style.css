@@ -106,5 +106,5 @@ img.alignleft, .alignleft img{
 .carousel-item div {
 	height: 500px;
 	background-size:cover;
-	background-position: center;
+	background-position: top;
 }
