@@ -103,7 +103,8 @@ img.alignleft, .alignleft img{
 	height: auto;
 }
 
-.img_carrousel {
-	width: 20% !important; 
-	background-position:center;
+.carousel-item img {
+	height: 500px;
+	background-size:cover;
+	background-position: center;
 }
