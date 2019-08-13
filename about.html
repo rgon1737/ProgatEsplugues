@@ -65,29 +65,43 @@
 </div>
 
 <div class="container">    
-	<div class="grid">
-	    <div class="slider-box">
-		<div class="slider" id="slider">
-		    <div class="slider__item">
-			<img src="./img/logo.jpg" class="responsive" alt="">
-			<h2 class="slider__item__title"></h2>
-		    </div>
-		    <div class="slider__item">
-			<img src="./img/2_1.jpg" class="responsive" alt="">
-			<h2 class="slider__item__title"></h2>
-		    </div>
-		    <div class="slider__item">
-			<img src="./img/6_1.jpg" class="responsive" alt="">
-			<h2 class="slider__item__title"></h2>
-		    </div>
-		</div>
+	<div id="carousel-example" class="carousel slide" data-ride="carousel">
+	  <ol class="carousel-indicators">
+	    <li data-target="#carousel-example" data-slide-to="0" class="active"></li>
+	    <li data-target="#carousel-example" data-slide-to="1"></li>
+	    <li data-target="#carousel-example" data-slide-to="2"></li>
+	  </ol>
 
-		<div class="slider-nav">
-		    <div class="slider-nav__prev" id="prev"><i class="fa fa-angle-left"></i></div>
-		    <div class="slider-nav__next" id="next"><i class="fa fa-angle-right"></i></div>
-		    <div class="slider-nav__dots" id="dots"></div>
-		</div>
+	  <div class="carousel-inner">
+	    <div class="item active">
+	      <a href="#"><img src="./img/logo.png" /></a>
+	      <div class="carousel-caption">
+		<h3>Meow</h3>
+		<p>Just Kitten Around</p>
+	      </div>
 	    </div>
+	    <div class="item">
+	      <a href="#"><img src="./img/1_1.png" /></a>
+	      <div class="carousel-caption">
+		<h3>Meow</h3>
+		<p>Just Kitten Around</p>
+	      </div>
+	    </div>
+	    <div class="item">
+	      <a href="#"><img src="./img/3_1.png" /></a>
+	      <div class="carousel-caption">
+		<h3>Meow</h3>
+		<p>Just Kitten Around</p>
+	      </div>
+	    </div>
+	  </div>
+
+	  <a class="left carousel-control" href="#carousel-example" data-slide="prev">
+	    <span class="glyphicon glyphicon-chevron-left"></span>
+	  </a>
+	  <a class="right carousel-control" href="#carousel-example" data-slide="next">
+	    <span class="glyphicon glyphicon-chevron-right"></span>
+	  </a>
 	</div>
 	<h5>Somos un grupo de voluntarios que busca el hogar que se merecen estos gatitos.
         <br/>
