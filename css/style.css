@@ -39,6 +39,7 @@ body{
 
 .box .descripcion {
 	text-align: left !important;
+	padding: 5px;
 }
 
 .alignleft{
@@ -47,7 +48,7 @@ body{
 }
 
 img.alignleft, .alignleft img{
-  margin:0 25px 5px 0;
+  margin:0 25px 10px 0;
 }
 
 #header{
