@@ -104,6 +104,7 @@ img.alignleft, div.alignleft, .alignleft img{
 }
 
 .responsive_vid {
-	max-width: 100%;
+	max-width: 20%;
+        height: auto;
 }
 
