@@ -47,7 +47,7 @@ body{
 		clear:left;
 }
 
-img.alignleft, video.alignleft, .alignleft img{
+img.alignleft, div.alignleft, .alignleft img{
   margin:0 25px 10px 0;
 }
 
