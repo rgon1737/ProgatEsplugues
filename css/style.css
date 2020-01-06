@@ -103,3 +103,7 @@ img.alignleft, div.alignleft, .alignleft img{
 	height: auto;
 }
 
+.responsive_vid {
+	max-width: 100%;
+}
+
